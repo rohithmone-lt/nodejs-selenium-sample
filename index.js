@@ -76,5 +76,5 @@ function searchTextOnGoogle() {
         driver.executeScript('lambda-status=failed');
         driver.quit();
     });
-    
+}
 searchTextOnGoogle();
