@@ -71,6 +71,7 @@ function searchTextOnGoogle() {
                  console.log("Successfully added a new task.");
              })
          });
+        driver.quit();
 
     }).catch(function(err){
         console.log("test failed with reason "+err)
