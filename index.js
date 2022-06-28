@@ -69,9 +69,9 @@ function searchTextOnGoogle() {
          driver.findElement(webdriver.By.id('sampletodotext')).sendKeys('Complete Lambdatest Tutorial\n').then(function(){
              driver.findElement(webdriver.By.id('addbutton')).click().then(function(){
                  console.log("Successfully added a new task.");
+                 driver.quit();
              })
          });
-        driver.quit();
 
     }).catch(function(err){
         console.log("test failed with reason "+err)
