@@ -22,6 +22,7 @@ const webdriver = require('selenium-webdriver');
 
 // username: Username can be found at automation dashboard
 const USERNAME = process.env.LT_USERNAME;
+const BUILDNAME = process.env.LT_BUILD_NAME
 
 // AccessKey:  AccessKey can be generated from automation dashboard or profile section
 const KEY = process.env.LT_ACCESS_KEY;
@@ -44,7 +45,7 @@ function searchTextOnGoogle() {
         console: true,
         video: true,
         name: 'Test 1', // name of the test
-        build: 'NodeJS build' // name of the build
+        build: BUILDNAME // name of the build
     }
 
     // URL: https://{username}:{accessToken}@beta-hub.lambdatest.com/wd/hub
