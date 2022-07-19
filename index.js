@@ -37,13 +37,13 @@ function searchTextOnGoogle() {
     const capabilities = {
         platform: 'windows 10',
         browserName: 'chrome',
-        version: '67.0',
+        version: 'latest',
         resolution: '1280x800',
-        geoLocation : "US",
-        network: true,
-        visual: true,
-        console: true,
-        video: true,
+        // geoLocation : "US",
+        // network: true,
+        // visual: true,
+        // console: true,
+        // video: true,
         name: 'Test 1', // name of the test
         build: BUILDNAME // name of the build
     }
@@ -80,3 +80,4 @@ function searchTextOnGoogle() {
     });
 }
 searchTextOnGoogle();
+
