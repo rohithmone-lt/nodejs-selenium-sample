@@ -44,6 +44,7 @@ function searchTextOnGoogle() {
         // visual: true,
         // console: true,
         // video: true,
+        tunnel: true,
         name: 'Test 1', // name of the test
         build: BUILDNAME // name of the build
     }
